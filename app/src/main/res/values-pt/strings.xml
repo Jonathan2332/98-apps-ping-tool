@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="parar">"Parar"</string>
+    <string name="total_pacotes_perdidos">"Pacotes Perdidos: "</string>
+    <string name="action_settings">"Configurações"</string>
+    <string name="exemplo">"Exemplo: 8.8.8.8"</string>
+    <string name="conexao">"Conexão: "</string>
+    <string name="endereco_ipv6">"Endereço IPV6: "</string>
+    <string name="endereco_ipv4">"Endereço IPV4: "</string>
+    <string name="host_empty">"Você deve preencher o host!"</string>
+    <string name="close">"Fechar"</string>
+    <string name="request_timedout">"Esgotado o tempo limite da requisição."</string>
+    <string name="host_unreachable">"O destino do host está inacessível!"</string>
+    <string name="lost_packet">" pacote perdido."</string>
+    <string name="lost_packets">" pacotes perdidos."</string>
+    <string name="no_connection">"Sem conexão"</string>
+    <string name="interval">"Intervalo: "</string>
+    <string name="packet_loss">"Ver pacotes perdidos "</string>
+    <string-array name="velocity_array">
+        <item>Muito Longo</item>
+        <item>Longo</item>
+        <item>Normal</item>
+        <item>Curto</item>
+        <item>Muito Curto</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="count_array">
+        <item>Ilimitada</item>
+        <item>10</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="array_text_size">
+        <item>Pequeno</item>
+        <item>Médio</item>
+        <item>Grande</item>
+    </string-array>
+    <string name="reset">"Redefinir configurações"</string>
+    <string name="text_reset">"Configurações Redefinidas!"</string>
+    <string name="button_save">"Salvar"</string>
+    <string name="settings_saved">"Configurações Aplicadas!"</string>
+    <string name="required_text">"Preencha este item!"</string>
+    <string name="required_interval">"Use entre 0.2 e 999999!"</string>
+    <string name="help_packet_loss">"Enquanto estiver executando o ping, será exibido e contabilizado os pacotes que forem perdidos."</string>
+    <string name="help_count_host">"Especifique o número de vezes que você queira enviar a solicitação do ping em um determinado host. Você pode escolher um número personalizado entre 1 e 99999999999 ou ilimitado."</string>
+    <string name="help_interval">"Especifique o tempo do intervalo de envio de cada pacote. No intervalo customizado você poderá especificar o tempo em segundos ou milissegundos. O Ping Tool possui 5 perfis predefinidos:\n\t-Muito Curto - 0.2\n\t-Curto - 0.6\n\t-Normal - 1\n\t-Longo - 2\n\t-Muito Longo - 3"</string>
+    <string name="prevent_trace">"Não use traço, apenas ponto."</string>
+    <string name="version">"Versão: "</string>
+    <string name="mask">"Máscara de sub-rede: "</string>
+    <string name="ajuda">"Ajuda"</string>
+    <string name="mask_unknown">"Desconhecido"</string>
+    <string name="text_mac">"Endereço MAC: "</string>
+    <string name="operator">"Operadora: "</string>
+    <string name="ask2">"Por que alguns pacotes saem fora de ordem e riscados?"</string>
+    <string name="ask1">"O que é o Ping Tool?"</string>
+    <string name="answer1">"Um aplicativo para executar o comando PING, que é uma ferramente de diagnóstico de rede. Para executar o ping você precisa colocar o host (URL ou endereço IP) que deseja testar e pressionar o botão PING."</string>
+    <string name="ask4">"O Ping Tool é fake?"</string>
+    <string name="answer4">"Não, o Ping Tool executa o comando ping dentro do terminal do Android em seu celular e obtém os resultados."</string>
+    <string name="ask5">"Por que não posso colocar um intervalo de 0.1 milissegundos?"</string>
+    <string name="answer5">"Pelas regras do Android, somente o superusuário pode definir o intervalo com valores menores que 0,2 milissegundos."</string>
+    <string name="answer2">"Isso pode acontecer quando sua internet estiver muito ruim, o motivo de sair fora de ordem não se trata de um bug do aplicativo, mas sim do Android, o Ping Tool risca esses pacotes apenas para facilitar a identificação. Infelizmente não depende de nós resolver esse problema, desculpe."</string>
+    <string name="answer6">"Isso pode acontecer quando sua internet estiver muito ruim. O Ping Tool risca esses pacotes apenas para identificação, não é um bug do aplicativo. A mensagem (DUP!) significa que o pacote foi duplicado ou danificado, isso é algo incomum de acontecer e os motivos são variados."</string>
+    <string name="ask6">"Por que alguns pacotes saem riscados e com a mensagem (DUP!)?"</string>
+    <string name="count_text">"Contagem:"</string>
+    <string name="required_count">"Use entre 1 e 99999999999!"</string>
+    <string name="help_ping_only">"Se a opção estiver habilitada o Ping Tool irá mostrar apenas as respostas do ping. As estatísticas ao final do ping não serão mostradas."</string>
+    <string name="ping_only_text">"Apenas respostas "</string>
+    <string name="count_finished">"!---------- Contagem Finalizada ----------!"</string>
+    <string name="doze_mode">"Modo Doze ativado, ping parado."</string>
+    <string name="ask7">"O que é a mensagem \"Modo Doze ativado, ping parado.\"?"</string>
+    <string name="answer7">"O Modo Doze é um sistema de economia de bateria do Android que otimiza aplicativos que estão em segundo plano para poupar bateria. Com isso quando você está executando o ping e deixa o celular com a tela desligada por um tempo o Ping Tool perde acesso a internet pois o Modo Doze bloqueia o acesso. Se quiser que o Ping Tool continue executando o ping mesmo com a tela desligada, você terá que desativar o Modo Doze no seu celular apenas para o Ping Tool. O Modo Doze está presente em Android 6.0 ou superior."</string>
+    <string name="confirm_dialog">"Confirmação"</string>
+    <string name="confirm_dialog_text">"O ping será parado, tem certeza que deseja continuar?"</string>
+    <string name="confirm_dialog_positive">"Sim"</string>
+    <string name="confirm_dialog_negative">"Não"</string>
+    <string name="confirm_dialog_reset">"As configurações serão redefinidas para o padrão, deseja continuar?"</string>
+    <string name="type_label">"Tipo: "</string>
+    <string name="internet_unavaiable">"Internet indisponível"</string>
+    <string name="invalid_url">"Insira um host válido"</string>
+    <string name="ping_mode">"Modo Ping:"</string>
+    <string name="help_ping_mode">Especifique se você deseja executar o ping em um host usando apenas IPV4 ou usando IPV4/IPV6. Se estiver usando o modo IPV4/IPV6 e sua conexão tiver suporte para IPV6, o Ping Tool dará preferência para o IPV6. Se a opção IPV4/IPV6 estiver desabilitada é por que sua versão do Android não suporta ping em endereços IPV6. Veja mais informações no menu de ajuda.</string>
+    <string name="ipv4_off">"Sua conexão não tem suporte para IPV4, mude o modo para IPV4/IPV6 nas configurações."</string>
+    <string name="no_ipv4">"Sua conexão não tem suporte para IPV4, portanto não há como executar o ping em um host IPV4."</string>
+    <string name="no_ipv6">"Sua conexão não tem suporte para IPV6, portanto não há como executar o ping em um host IPV6."</string>
+    <string name="no_support">"Não suportado"</string>
+    <string name="unknown_host">"Host desconhecido ou inválido"</string>
+    <string name="packet_recounted">"Aviso: Os pacotes perdidos foram recontados!"</string>
+    <string name="ask8">"O que significa o aviso \"Os pacotes perdidos foram recontados\"?"</string>
+    <string name="answer8">"Significa que durante o ping alguns pacotes sairam fora de ordem e riscados e o Ping Tool fez a recontagem do total de pacotes perdidos durante a execução do ping."</string>
+    <string name="warning1">"Aviso: quando a opção \"apenas respostas\" está marcada, o Ping Tool não contabilizará os pacotes que foram perdidos por último, assim que o ping parar a contagem de pacotes irá parar juntamente."</string>
+    <string name="contains_unknown">"ping: host desconhecido: "</string>
+    <string name="new_type_connection">"Novo tipo de conexão"</string>
+    <string name="no_dns">"Sem DNS"</string>
+    <string name="getting_mask">"Verificando"</string>
+    <string name="label_bytes">"Bytes:"</string>
+    <string name="required_bytes">"Use entre 0 e 65507!"</string>
+    <string name="help_packet_bytes">"Especifique o número de bytes de dados a serem enviados. O padrão é 56, que se traduz em 64 bytes de dados ICMP quando combinados com os 8 bytes de dados de cabeçalho ICMP."</string>
+    <string name="send_email">Enviar email com…</string>
+    <string name="report_bug_error">Não foi possível encontrar um aplicativo de e-mail e uma conta</string>
+    <string name="ipv4off_pie">Sua conexão não suporta IPV4 e sua versão do Android não suporta ping na conexão IPV6!</string>
+    <string name="ask3">Por que não consigo executar o ping em endereços IPv6 no Android 9.0?</string>
+    <string name="answer3">Infelizmente não depende de nós resolvermos esse problema, no Android 9.0 há essa limitação que não permite o sistema executar o ping em endereços IPV6.</string>
+    <string name="time_out">Tempo Esgotado - Recarregar</string>
+    <string name="erro_reload">Erro - Recarregar</string>
+    <string name="external_ip">"IP Externo: "</string>
+    <string name="dont_remove">Por favor não remova esta informação</string>
+    <string name="menu_rate">Avaliar</string>
+    <string name="give_permission_text">Dê a permissão de sobreposição para continuar.</string>
+    <string name="permission_required_text">Permissão Requerida</string>
+    <string name="warning_pingfloat">Você não pode iniciar a janela flutuante se a opção \"somente respostas\" estiver desabilitada.</string>
+    <string name="help_floating_mode">Com essa opção ativada, você pode executar ping em uma janela flutuante sobrepondo outros aplicativos. Os pacotes perdidos são exibidos toda vez que há uma perda de pacotes na janela flutuante.</string>
+    <string name="help_text_size">Isso altera o tamanho do texto na janela flutuante, quanto maior o texto, maior a janela.</string>
+    <string name="setting_text_size">Texto:</string>
+    <string name="total_loss">" perdas totais."</string>
+    <string name="text_float_mode">"Modo flutuante "</string>
+    <string name="please_write_details">Por favor, escreva com detalhes qual é o problema</string>
+
+</resources>

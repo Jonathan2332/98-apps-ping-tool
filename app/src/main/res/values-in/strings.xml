@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="parar">"Berhenti"</string>
+    <string name="interval">"Selang: "</string>
+    <string name="total_pacotes_perdidos">"Paket Hilang: "</string>
+    <string name="action_settings">"Pengaturan"</string>
+    <string name="exemplo">"Contoh: 8.8.8.8"</string>
+    <string name="conexao">"Koneksi: "</string>
+    <string name="endereco_ipv6">"Alamat IPV6: "</string>
+    <string name="endereco_ipv4">"Alamat IPV4: "</string>
+    <string name="host_empty">"Anda harus mengisi host!"</string>
+    <string name="close">"Dekat"</string>
+    <string name="request_timedout">"Permintaannya habis."</string>
+    <string name="host_unreachable">"Tujuan tuan rumah tidak dapat diakses!"</string>
+    <string name="lost_packet">" paket hilang."</string>
+    <string name="lost_packets">" paket yang hilang."</string>
+    <string name="no_connection">"Tidak ada koneksi"</string>
+    <string name="packet_loss">"Lihat paket yang hilang "</string>
+    <string name="reset">"Atur Ulang Pengaturan"</string>
+    <string name="text_reset">"Setel Ulang Pengaturan!"</string>
+    <string name="button_save">"Simpan"</string>
+    <string name="settings_saved">"Konfigurasi Terapan!"</string>
+    <string name="required_text">"Isi item ini!"</string>
+    <string name="help_interval">"Tentukan interval waktu untuk setiap paket untuk dikirim. Dalam interval khusus, Anda dapat menentukan waktu dalam detik atau milidetik. Ping Tool memiliki 5 profil standar:\n\t-Sangat Singkat - 0,2\n\t-Pendek - 0,6\n\t-Normal - 1\n\t-Panjang - 2\n\t-Sangat Panjang - 3"</string>
+    <string name="required_interval">"Gunakan antara 0,2 dan 999999!"</string>
+    <string name="help_packet_loss">"Saat melakukan ping, paket-paket yang hilang akan ditampilkan dan dihitung."</string>
+    <string name="help_count_host">"Tentukan berapa kali Anda ingin mengirim permintaan ping ke host tertentu. Anda dapat memilih nomor khusus antara 1 dan 99999999999 atau tidak terbatas."</string>
+    <string name="prevent_trace">"Jangan gunakan tanda hubung, hanya titik."</string>
+    <string name="version">"Kata sandi: "</string>
+    <string name="mask">"Topeng Subnet: "</string>
+    <string name="ajuda">"Bantuan"</string>
+    <string name="mask_unknown">"Tidak dikenal"</string>
+    <string name="text_mac">"Alamat MAC: "</string>
+    <string name="operator">"Operator: "</string>
+    <string name="ask2">"Mengapa beberapa paket rusak dan tergores?"</string>
+    <string name="ask1">"Apa itu Ping Tool?"</string>
+    <string name="ask4">"Apakah Ping Tool itu palsu?"</string>
+    <string name="answer4">"Tidak, Ping Tool menjalankan perintah ping di dalam terminal Android di ponsel Anda dan mendapatkan hasilnya."</string>
+    <string name="ask5">"Mengapa saya tidak bisa meletakkan interval 0.1 milidetik?"</string>
+    <string name="answer5">"Menurut aturan Android, hanya pengguna super yang dapat mengatur kisaran dengan nilai kurang dari 0,2 milidetik."</string>
+    <string name="answer2">"Ini bisa terjadi ketika internet Anda sangat buruk, alasan untuk keluar dari pesanan bukan bug aplikasi, tetapi bug Android, Ping Tool menggaruk paket ini hanya untuk membuatnya lebih mudah untuk diidentifikasi. Sayangnya tidak sampai pada kita untuk menyelesaikan masalah ini, maaf."</string>
+    <string name="ask6">"Mengapa beberapa paket dibiarkan tergores dan dengan pesan (DUP!)?"</string>
+    <string name="answer6">"Ini bisa terjadi ketika internet Anda sangat buruk. Ping Tool menggaruk paket-paket ini hanya untuk identifikasi, bukan bug aplikasi. Pesan (DUP!) Berarti paket telah digandakan atau rusak, ini tidak biasa terjadi dan alasannya beragam."</string>
+    <string name="count_text">"Berhitung:"</string>
+    <string name="required_count">"Gunakan antara 1 dan 99999999999!"</string>
+    <string name="help_ping_only">"Jika opsi ini diaktifkan, Ping Tool hanya akan menampilkan respons ping. Statistik di akhir ping tidak akan ditampilkan."</string>
+    <string name="ping_only_text">"Hanya balasan "</string>
+    <string name="count_finished">"!---------- Hitung Selesai! ----------!"</string>
+    <string name="confirm_dialog">"Konfirmasi"</string>
+    <string name="confirm_dialog_text">"Ping akan dihentikan, Anda yakin ingin melanjutkan?"</string>
+    <string name="confirm_dialog_positive">"Ya"</string>
+    <string name="confirm_dialog_negative">"Tidak"</string>
+    <string name="confirm_dialog_reset">"Pengaturan akan diatur ulang ke default, apakah Anda ingin melanjutkan?"</string>
+    <string name="type_label">"Jenis: "</string>
+    <string name="internet_unavaiable">"Internet tidak tersedia"</string>
+    <string name="invalid_url">"Silakan masukkan host yang valid"</string>
+    <string name="ping_mode">"Ping Mode:"</string>
+    <string name="help_ping_mode">Tentukan apakah Anda ingin melakukan ping host hanya menggunakan IPV4 atau menggunakan IPV4/IPV6. Jika Anda menggunakan mode IPV4/IPV6 dan koneksi Anda mendukung IPV6, Ping Tool akan memberikan preferensi ke IPV6. Jika IPV4/IPV6 dinonaktifkan, maka versi Android Anda tidak mendukung ping alamat IPv6. Lihat informasi lebih lanjut di menu bantuan.</string>
+    <string name="ipv4_off">"Koneksi Anda tidak mendukung IPV4, ubah mode ke IPV4/IPV6 di pengaturan."</string>
+    <string name="no_ipv4">"Koneksi Anda tidak mendukung IPV4, jadi tidak ada cara untuk melakukan ping ke host IPv4."</string>
+    <string name="no_ipv6">"Koneksi Anda tidak mendukung IPV6, jadi tidak ada cara untuk melakukan ping ke host IPv6."</string>
+    <string name="no_support">"Tidak didukung"</string>
+    <string name="unknown_host">"Host tidak dikenal atau tidak valid"</string>
+    <string name="packet_recounted">"Peringatan: Paket yang hilang telah dihitung ulang!"</string>
+    <string name="getting_mask">"Mendapatkan"</string>
+    <string name="no_dns">"Tidak ada DNS"</string>
+    <string name="new_type_connection">"Jenis koneksi baru"</string>
+    <string name="contains_unknown">"ping: host tidak dikenal: "</string>
+    <string name="answer1">"Aplikasi untuk menjalankan perintah PING, yang merupakan alat diagnostik jaringan. Untuk melakukan ping, Anda harus meletakkan host (URL atau alamat IP) yang ingin Anda uji dan tekan tombol PING."</string>
+    <string name="doze_mode">"Doze Mode diaktifkan, ping berhenti."</string>
+    <string name="ask7">"Apa pesan \"Doze Mode diaktifkan, ping berhenti.\"?"</string>
+    <string name="answer7">"Doze Mode adalah sistem penghemat baterai Android yang mengoptimalkan aplikasi yang ada di latar belakang untuk menghemat daya baterai. Dengan ini ketika Anda melakukan ping dan biarkan sel dengan layar mati untuk sementara waktu, Ping Tool kehilangan akses ke internet karena Doze Mode memblokir akses. Jika Anda ingin Ping Tool terus melakukan ping meskipun layar mati, Anda harus menonaktifkan Doze Mode di ponsel Anda hanya untuk Ping Tool. Mode Doze hadir di Android 6.0 atau lebih tinggi."</string>
+    <string name="ask8">"Apa arti peringatan \"Paket yang hilang telah dihitung lagi\"?"</string>
+    <string name="answer8">"Ini berarti bahwa selama ping beberapa paket rusak dan tergores dan Ping Tool telah menghitung total paket yang hilang selama ping."</string>
+    <string name="warning1">"Peringatan: Ketika opsi \"Hanya balasan\" dicentang, Ping Tool tidak akan menghitung paket yang hilang terakhir, segera setelah ping berhenti, jumlah paket akan berhenti bersamaan."</string>
+    <string-array name="velocity_array">
+        <item>Sangat Panjang</item>
+        <item>Panjang</item>
+        <item>Normal</item>
+        <item>Pendek</item>
+        <item>Sangat Singkat</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="count_array">
+        <item>Tak terbatas</item>
+        <item>10</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="array_text_size">
+        <item>Kecil</item>
+        <item>Medium</item>
+        <item>Besar</item>
+    </string-array>
+    <string name="label_bytes">"Bytes:"</string>
+    <string name="required_bytes">"Gunakan antara 0 dan 65507!"</string>
+    <string name="help_packet_bytes">"Menentukan jumlah byte data yang akan dikirim. Standarnya adalah 56, yang diterjemahkan menjadi 64 byte data ICMP bila dikombinasikan dengan 8 byte data header ICMP."</string>
+    <string name="send_email">Kirim email dengan…</string>
+    <string name="report_bug_error">Tidak dapat menemukan aplikasi dan akun email</string>
+    <string name="ipv4off_pie">Koneksi Anda tidak mendukung IPV4 dan versi Android Anda tidak mendukung ping pada koneksi IPV6!</string>
+    <string name="ask3">Mengapa saya tidak bisa melakukan ping alamat IPv6 di Android 9.0?</string>
+    <string name="answer3">Sayangnya tidak terserah kita untuk menyelesaikan masalah ini, di Android 9.0 ada batasan ini yang tidak memungkinkan sistem untuk melakukan ping ke alamat IPv6.</string>
+    <string name="time_out">Waktu Henti - Muat Ulang</string>
+    <string name="erro_reload">Kesalahan - Muat Ulang</string>
+    <string name="external_ip">"IP Eksternal: "</string>
+    <string name="dont_remove">Tolong jangan hapus informasi ini</string>
+    <string name="menu_rate">Mengevaluasi</string>
+    <string name="give_permission_text">Berikan izin hamparan untuk melanjutkan.</string>
+    <string name="permission_required_text">Diperlukan Izin</string>
+    <string name="warning_pingfloat">Anda tidak dapat memulai jendela apung jika opsi \"hanya balasan\" dinonaktifkan.</string>
+    <string name="help_floating_mode">Dengan opsi ini diaktifkan, Anda dapat melakukan ping jendela apung dengan melapis aplikasi lain. Paket yang hilang ditampilkan setiap kali ada paket yang hilang di jendela mengambang.</string>
+    <string name="help_text_size">Ini mengubah ukuran teks di jendela mengambang, semakin besar teks, semakin besar jendela.</string>
+    <string name="setting_text_size">Teks:</string>
+    <string name="total_loss">" total kerugian."</string>
+    <string name="text_float_mode">"Mode mengambang "</string>
+    <string name="please_write_details">Silakan tulis secara detail apa masalahnya</string>
+</resources>

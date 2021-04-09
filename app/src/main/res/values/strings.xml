@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name" translatable="false">"Ping Tool"</string>
+    <string name="parar">"Stop"</string>
+    <string name="interval">"Interval: "</string>
+    <string name="total_pacotes_perdidos">"Packet Loss: "</string>
+    <string name="tab_info" translatable="false">"Info"</string>
+    <string name="tab_ping" translatable="false">"Ping"</string>
+    <string name="action_settings">"Settings"</string>
+    <string name="exemplo">"Example: 8.8.8.8"</string>
+    <string name="conexao">"Connection: "</string>
+    <string name="endereco_ipv6">"IPV6 Address: "</string>
+    <string name="endereco_ipv4">"IPV4 Address: "</string>
+    <string name="host_empty">"You must populate the host!"</string>
+    <string name="ping" translatable="false">"Ping"</string>
+    <string name="packet_initial" translatable="false">"--"</string>
+    <string name="host" translatable="false">"Host:"</string>
+    <string name="close">"Close"</string>
+    <string name="developer" translatable="false">"by 98Apps"</string>
+    <string name="request_timedout">"Request timed out."</string>
+    <string name="host_unreachable">"The host destination is unreachable!"</string>
+    <string name="lost_packet">" packet loss."</string>
+    <string name="lost_packets">" packet loss."</string>
+    <string name="no_connection">"No connection"</string>
+    <string name="packet_loss">"See packet loss "</string>
+    <string name="reset">"Reset to default"</string>
+    <string name="text_reset">"Settings Reseted!"</string>
+    <string name="button_save">"Save"</string>
+    <string name="custom" translatable="false">"Custom:"</string>
+    <string name="settings_saved">"Settings Applied!"</string>
+    <string name="required_text">"Populate this item!"</string>
+    <string name="required_interval">"Use between 0.2 and 999999!"</string>
+    <string name="permited_interval" translatable="false">"0.2–999999"</string>
+    <string name="offline_ipv4" translatable="false">"0.0.0.0"</string>
+    <string name="offline_ipv6" translatable="false">"0000:0000:0000:0000:0000"</string>
+    <string name="help_packet_loss">"While pinging, the packets that are lost will be displayed and counted."</string>
+    <string name="help_count_host">"Specify the number of times you want to send the ping request to a particular host. You can choose a custom number between 1 and 99999999999 or unlimited."</string>
+    <string name="help_interval">"Specify the time interval for each packet to send. In the custom interval you can specify the time in seconds or milliseconds. Ping Tool has 5 predefined profiles:\n\t-Very Short - 0.2\n\t-Short - 0.6\n\t-Normal - 1\n\t-Long - 2\n\t-Very Long - 3"</string>
+    <string name="prevent_trace">"Do not use dash, just point."</string>
+    <string name="version">"Version: "</string>
+    <string name="dns4" translatable="false">"DNS 4: "</string>
+    <string name="dns3" translatable="false">"DNS 3: "</string>
+    <string name="dns2" translatable="false">"DNS 2: "</string>
+    <string name="dns1" translatable="false">"DNS 1: "</string>
+    <string name="gateway" translatable="false">"Gateway: "</string>
+    <string name="mask">"Subnet Mask: "</string>
+    <string name="ajuda">"Help"</string>
+    <string name="mask_unknown">"Unknown"</string>
+    <string name="text_mac">"MAC Address: "</string>
+    <string name="operator">"Operator: "</string>
+    <string name="ask2">Why do some packets go out of order and scratched?</string>
+    <string-array name="velocity_array">
+        <item>Very Long</item>
+        <item>Long</item>
+        <item>Normal</item>
+        <item>Short</item>
+        <item>Very Short</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="count_array">
+        <item>Unlimited</item>
+        <item>10</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="array_mode">
+        <item>IPV4</item>
+        <item>IPV4/IPV6</item>
+    </string-array>
+    <string-array name="array_text_size">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string name="ask1">"Whats is the Ping Tool?"</string>
+    <string name="answer1">"An application to run the PING command, which is a network diagnostic tool. To ping you need to put the host (URL or IP address) you want to test and press the PING button."</string>
+    <string name="ask3">Why can not I ping IPv6 addresses on Android 9.0?</string>
+    <string name="answer3">Unfortunately it is not up to us to solve this problem, in Android 9.0 there is this limitation that does not allow the system to ping IPv6 addresses.</string>
+    <string name="ask4">"Is the Ping Tool fake?"</string>
+    <string name="answer4">"No, the Ping Tool runs the ping command inside the Android terminal on your mobile phone and gets the results."</string>
+    <string name="ask5">"Why can not we have an interval of 0.1 milliseconds?"</string>
+    <string name="answer5">"By the rules of Android, only the superuser can set the range with values ​​less than 0.2 millisecond."</string>
+    <string name="answer2">"This can happen when your internet is very bad, the reason for getting out of order is not an application bug, but Android bug, Ping Tool scratches these packets just to make it easier to identify. Unfortunately it is not up to us to solve this problem, sorry."</string>
+    <string name="default_host" translatable="false">"google.com"</string>
+    <string name="ask6">"Why do some packets leave scratched and with the message (DUP!)?"</string>
+    <string name="answer6">"This can happen when your internet is very bad. The Ping Tool scratches these packets just for identification, not an application bug. The message (DUP!) Means that the packet has been duplicated or damaged, this is unusual to happen and the reasons are varied."</string>
+    <string name="count_text">"Count:"</string>
+    <string name="required_count">"Use between 1 and 99999999999!"</string>
+    <string name="help_ping_only">"If the option is enabled the Ping Tool will only show the ping responses. Statistics at the end of the ping will not be shown."</string>
+    <string name="ping_only_text">"Only replies "</string>
+    <string name="count_finished">"!---------- Count Finished ----------!"</string>
+    <string name="doze_mode">"Doze Mode enabled, ping stopped."</string>
+    <string name="ask7">"What is the message \"Doze Mode enabled, ping stopped.\"?"</string>
+    <string name="answer7">"Doze Mode is an Android battery-saving system that optimizes apps that are in the background to save battery power. With this when you are pinging and leave the cell with the screen off for a while the Ping Tool loses access to the internet because Doze Mode blocks access. If you want Ping Tool to continue pinging even with the screen off, you will have to disable Doze Mode on your phone just for the Ping Tool. Doze Mode is present in Android 6.0 or higher."</string>
+    <string name="confirm_dialog">"Confirmation"</string>
+    <string name="confirm_dialog_text">"Ping will be stopped, are you sure you want to continue?"</string>
+    <string name="confirm_dialog_positive">"Yes"</string>
+    <string name="confirm_dialog_negative">"No"</string>
+    <string name="confirm_dialog_reset">"The settings will be reset to the default, do you want to continue?"</string>
+    <string name="type_label">"Type: "</string>
+    <string name="internet_unavaiable">"Internet unavailable"</string>
+    <string name="invalid_url">"Please enter a valid host"</string>
+    <string name="ping_mode">"Ping Mode:"</string>
+    <string name="help_ping_mode">Specify whether you want to ping a host using only IPV4 or using IPV4/IPV6. If you are using IPV4/IPV6 mode and your connection supports IPV6, the Ping Tool will give preference to IPV6. If IPV4/IPV6 is disabled, then your Android version does not support pinging IPv6 addresses. See more information in the help menu.</string>
+    <string name="ipv4_off">"Your connection does not support IPV4, change the mode to IPV4/IPV6 in the settings."</string>
+    <string name="no_ipv4">"Your connection does not support IPV4, so there is no way to ping an IPv4 host."</string>
+    <string name="no_ipv6">"Your connection does not support IPV6, so there is no way to ping an IPv6 host."</string>
+    <string name="no_support">"Not supported"</string>
+    <string name="unknown_host">"Unknown or invalid host"</string>
+    <string name="packet_recounted">"Warning: Lost packets have been recounted!"</string>
+    <string name="ask8">"What does the \"Lost packets have been recounted\" warning mean?"</string>
+    <string name="answer8">"It means that during ping some packets went out of order and scratched and the Ping Tool recounted the total of packets lost during ping."</string>
+    <string name="warning1">"Warning: When the \"only replies\" option is checked, Ping Tool will not count the packets that were lost last, as soon as ping stops the packet count will stop together."</string>
+    <string name="contains_unknown">"ping: unknown host: "</string>
+    <string name="new_type_connection">"New type of connection"</string>
+    <string name="no_dns">"No DNS"</string>
+    <string name="getting_mask">"Getting"</string>
+    <string name="permitted_bytes" translatable="false">"0 – 65507"</string>
+    <string name="label_bytes">"Bytes:"</string>
+    <string name="required_bytes">"Use between 0 and 65507!"</string>
+    <string name="help_packet_bytes">"Specifies the number of data bytes to be sent. The default is 56, which translates into 64 ICMP data bytes when combined with the 8 bytes of ICMP header data."</string>
+    <string name="bugs" translatable="false">Bugs?</string>
+    <string name="send_email">Send email with…</string>
+    <string name="report_bug_error">Couldn\'t find an email app and account</string>
+    <string name="text_button_load" translatable="false">Load</string>
+    <string name="external_ip">"External IP: "</string>
+    <string name="ipv4off_pie">Your connection does not support IPV4 and your version of Android do not supports ping on IPV6 connection!</string>
+    <string name="erro_reload">Error - Reload</string>
+    <string name="time_out">Timed Out - Reload</string>
+    <string name="dont_remove">Please don\'t remove this information</string>
+    <string name="menu_rate">Rate</string>
+    <string name="text_float_mode">"Float mode "</string>
+    <string name="button_ping_float" translatable="false">PING FLOAT</string>
+    <string name="permission_required_text">Permission Required</string>
+    <string name="give_permission_text">Give the overlay permission to continue.</string>
+    <string name="warning_pingfloat">"You can not start the float window if the option \"only replies\" is disabled."</string>
+    <string name="help_floating_mode">With this option enabled, you can ping a floating window by overlaying other applications. Lost packets are displayed every time there is a loss of packet in the floating window.</string>
+    <string name="help_text_size">This changes the size of the text in the floating window, the larger the text, the larger the window.</string>
+    <string name="setting_text_size">Text Size:</string>
+    <string name="total_loss">" total losses."</string>
+    <string name="description_icon" translatable="false">Ping Tool Icon</string>
+    <string name="description_open" translatable="false">Open Ping Tool</string>
+    <string name="description_maximize" translatable="false">Maximize Window</string>
+    <string name="description_resize" translatable="false">Resize Window</string>
+    <string name="please_write_details">Please write in detail what is the problem</string>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp">
+
+    <TextView
+        android:id="@+id/text_label_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interval"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_label_interval"
+        android:textColor="@color/colorAccent2"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/text_label_interval" />
+
+    <RelativeLayout
+        android:id="@+id/packet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/result_packet"
+            android:text="@string/total_pacotes_perdidos"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_toStartOf="@id/result_packet" />
+
+        <TextView
+            android:id="@+id/result_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/packet_initial"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_label_host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/packet_layout"
+        android:layout_marginTop="3dp"
+        android:text="@string/host"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/input_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/packet_layout"
+        android:layout_toRightOf="@+id/text_label_host"
+        android:hint="@string/exemplo"
+        android:inputType="textUri"
+        android:maxLines="1"
+        android:text="@string/default_host"
+        android:textSize="20sp"
+        android:imeOptions="actionDone|flagForceAscii"
+        android:layout_toEndOf="@+id/text_label_host" />
+
+    <Spinner
+        android:id="@+id/spinner_recent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/input_host"
+        android:layout_alignRight="@id/input_host"
+        android:layout_alignEnd="@id/input_host"
+        android:layout_alignBottom="@id/input_host"
+        android:spinnerMode="dialog"
+        android:background="@drawable/selector_arrow" />
+
+    <Button
+        android:id="@+id/button_ping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_label_host"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/round_corner_button"
+        android:text="@string/ping"
+        android:textColor="@color/colorTextWhite" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_ping"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:stackFromBottom="true"
+            android:textColor="@color/colorAccent"
+            android:transcriptMode="alwaysScroll" />
+
+    </LinearLayout>
+
+</RelativeLayout>

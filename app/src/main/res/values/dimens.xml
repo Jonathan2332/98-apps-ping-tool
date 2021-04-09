@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_mid">13sp</dimen>
+    <dimen name="text_size_big">14sp</dimen>
+
+    <dimen name="window_large_width">245dp</dimen>
+    <dimen name="window_large_height">200dp</dimen>
+
+    <dimen name="window_mid_width">215dp</dimen>
+    <dimen name="window_mid_height">200dp</dimen>
+
+    <dimen name="window_small_width">204dp</dimen>
+    <dimen name="window_small_height">200dp</dimen>
+</resources>

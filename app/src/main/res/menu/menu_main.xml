@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="a98apps.pingnoads.view.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_reportbugs"
+        android:orderInCategory="101"
+        android:title="@string/bugs"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rate"
+        android:orderInCategory="102"
+        android:title="@string/menu_rate"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="103"
+        android:title="@string/ajuda"
+        app:showAsAction="never" />
+</menu>

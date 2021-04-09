@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/about"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/operator_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/label_operator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/operator"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_operator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/label_operator"
+                    android:layout_toRightOf="@+id/label_operator"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_label_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/operator_layout"
+                android:text="@string/conexao"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/connection_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/operator_layout"
+                android:layout_toEndOf="@+id/text_label_connection"
+                android:layout_toRightOf="@+id/text_label_connection"
+                android:textColor="@color/colorAccent2"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/connection_type_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_label_connection"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/label_connection_type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type_label"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/connection_type_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/label_connection_type_name"
+                    android:layout_toRightOf="@+id/label_connection_type_name"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mac_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/connection_type_name_layout"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_label_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_mac"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/text_label_mac"
+                    android:layout_toRightOf="@+id/text_label_mac"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_ipv4_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mac_layout"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text_label_ipv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endereco_ipv4"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_ipv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/text_label_ipv4"
+                    android:layout_toRightOf="@+id/text_label_ipv4"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_ipv6_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_ipv4_layout"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text_label_ipv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endereco_ipv6"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_ipv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/text_label_ipv6"
+                    android:layout_toRightOf="@+id/text_label_ipv6"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/external_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_ipv6_layout"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/label_external_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/external_ip"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/button_load_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/label_external_ip"
+                    android:layout_toRightOf="@+id/label_external_ip"
+                    android:clickable="true"
+                    android:text="@string/text_button_load"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_mobile_info_dns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/external_ip"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dns1_mobile_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dns1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns1_mobile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/dns1_mobile_label"
+                    android:layout_toRightOf="@+id/dns1_mobile_label"
+                    android:textColor="@color/colorAccent2"
+                    android:textColorHint="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns2_mobile_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dns1_mobile_label"
+                    android:text="@string/dns2"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns2_mobile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dns1_mobile_label"
+                    android:layout_toEndOf="@+id/dns2_mobile_label"
+                    android:layout_toRightOf="@+id/dns2_mobile_label"
+                    android:textColor="@color/colorAccent2"
+                    android:textColorHint="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_mobile_info_dns_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_mobile_info_dns"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dns3_mobile_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dns3"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns3_mobile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/dns3_mobile_label"
+                    android:layout_toRightOf="@+id/dns3_mobile_label"
+                    android:textColor="@color/colorAccent2"
+                    android:textColorHint="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns4_mobile_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dns3_mobile_label"
+                    android:text="@string/dns4"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns4_mobile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dns3_mobile_label"
+                    android:layout_toEndOf="@+id/dns4_mobile_label"
+                    android:layout_toRightOf="@+id/dns4_mobile_label"
+                    android:textColor="@color/colorAccent2"
+                    android:textColorHint="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_wifi_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/external_ip"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_label_gateway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gateway"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_gateway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/text_label_gateway"
+                    android:layout_toRightOf="@+id/text_label_gateway"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns1_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_label_gateway"
+                    android:text="@string/dns1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_label_gateway"
+                    android:layout_toEndOf="@+id/dns1_label"
+                    android:layout_toRightOf="@+id/dns1_label"
+                    android:textColor="@color/colorAccent2"
+                    android:textColorHint="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns2_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dns1_label"
+                    android:text="@string/dns2"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dns2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dns1_label"
+                    android:layout_toEndOf="@+id/dns2_label"
+                    android:layout_toRightOf="@+id/dns2_label"
+                    android:textColor="@color/colorAccent2"
+                    android:textColorHint="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mask_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dns2_label"
+                    android:text="@string/mask"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mask_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dns2_label"
+                    android:layout_toEndOf="@+id/mask_label"
+                    android:layout_toRightOf="@+id/mask_label"
+                    android:textColor="@color/colorAccent2"
+                    android:textColorHint="@color/colorAccent2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/versao"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/name_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon"
+            android:layout_toEndOf="@id/icon"
+            android:layout_toRightOf="@id/icon"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_app"
+            android:layout_alignStart="@id/name_app"
+            android:layout_alignLeft="@id/name_app"
+            android:text="@string/developer"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/versao"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="parar">"Zatrzymać"</string>
+    <string name="interval">"Interwał: "</string>
+    <string name="total_pacotes_perdidos">Utracone Pakiety: </string>
+    <string name="action_settings">"Ustawienia"</string>
+    <string name="exemplo">"Przykład: 8.8.8.8"</string>
+    <string name="conexao">"Połączenie: "</string>
+    <string name="endereco_ipv6">"Adres IPV6: "</string>
+    <string name="endereco_ipv4">"Adres IPV4: "</string>
+    <string name="host_empty">"Musisz wypełnić host!"</string>
+    <string name="close">"Zamknąć"</string>
+    <string name="request_timedout">"Upłynął limit czasu żądania."</string>
+    <string name="host_unreachable">"Miejsce docelowe host jest nieosiągalne!"</string>
+    <string name="lost_packet">" zgubiony pakiet."</string>
+    <string name="lost_packets">" zgubione pakiety."</string>
+    <string name="no_connection">"Brak połączenia"</string>
+    <string name="packet_loss">"Zobacz utratę pakietów "</string>
+    <string name="reset">"Zresetuj ustawienia"</string>
+    <string name="text_reset">"Ustawienia zresetowane!"</string>
+    <string name="button_save">"Zaoszczędzić"</string>
+    <string name="settings_saved">"Ustawienia zastosowane!"</string>
+    <string name="required_text">"Wypełnij ten przedmiot!"</string>
+    <string name="required_interval">"Użyj od 0.2 do 999999!"</string>
+    <string name="help_packet_loss">"Podczas wykonywania polecenia ping, zagubione pakiety będą wyświetlane i liczone."</string>
+    <string name="help_count_host">"Określ, ile razy chcesz wysłać żądanie ping do konkretnego host. Możesz wybrać niestandardową liczbę od 1 do 99999999999 lub bez ograniczeń."</string>
+    <string name="help_interval">"Określ przedział czasu dla każdego wysyłanego pakietu. W niestandardowym interwale możesz określić czas w sekundach lub milisekundach. Narzędzie Ping ma 5 predefiniowanych profili:\n\t-Bardzo Krótki - 0.2\n\t-Krótki - 0.6\n\t-Normalny - 1\n\t-Długie - 2\n\t-Bardzo Długo - 3"</string>
+    <string name="prevent_trace">"Nie używaj łącznika, tylko punkty."</string>
+    <string name="version">"Wersja: "</string>
+    <string name="mask">"Maska podsieci: "</string>
+    <string name="ajuda">"Pomoc"</string>
+    <string name="mask_unknown">"Nieznany"</string>
+    <string name="text_mac">"Adres MAC: "</string>
+    <string name="operator">"Operator: "</string>
+    <string name="ask2">"Dlaczego niektóre pakiety znikają i są porysowane?"</string>
+    <string-array name="velocity_array">
+        <item>"Bardzo Długo"</item>
+        <item>"Długie"</item>
+        <item>"Normalna"</item>
+        <item>"Krótki"</item>
+        <item>"Bardzo Krótki"</item>
+        <item>"Custom"</item>
+    </string-array>
+    <string-array name="count_array">
+        <item>"Nieograniczony"</item>
+        <item>"10"</item>
+        <item>"100"</item>
+        <item>"500"</item>
+        <item>"1000"</item>
+        <item>"2000"</item>
+        <item>"Custom"</item>
+    </string-array>
+    <string-array name="array_mode">
+        <item>"IPV4"</item>
+        <item>"IPV4/IPV6"</item>
+    </string-array>
+    <string-array name="array_text_size">
+        <item>Mały</item>
+        <item>Średni</item>
+        <item>Duży</item>
+    </string-array>
+    <string name="ask1">"Co to jest Ping Tool?"</string>
+    <string name="answer1">"Aplikacja do uruchomienia polecenia PING, które jest narzędziem diagnostycznym sieci. Aby pingować, musisz umieścić host (URL lub adres IP), który chcesz przetestować, i nacisnąć przycisk PING."</string>
+    <string name="ask4">"Czy Ping Tool jest fałszywe?"</string>
+    <string name="answer4">"Nie, Ping Tool uruchamia polecenie ping w terminalu Android na telefonie komórkowym i otrzymuje wyniki."</string>
+    <string name="ask5">"Dlaczego nie możemy mieć przedziału 0.1 milisekundy?"</string>
+    <string name="answer5">"Zgodnie z regułami Androida, tylko superużytkownik może ustawić zakres z wartościami mniejszymi niż 0.2 milisekundy."</string>
+    <string name="answer2">"Może się to zdarzyć, gdy twój internet jest bardzo zły, przyczyną awarii jest nie błąd aplikacji, ale błąd Androida, Ping Tool podrapuje te pakiety, aby ułatwić identyfikację. Niestety nie jest to do nas, aby rozwiązać ten problem, przepraszam."</string>
+    <string name="ask6">"Dlaczego niektóre paczki zostawiają porysowane iz wiadomością (DUP!)?"</string>
+    <string name="answer6">"Może się to zdarzyć, gdy internet jest bardzo zły. Ping Tool podrapuje te pakiety tylko w celu identyfikacji, a nie błędu aplikacji. Komunikat (DUP!) Oznacza, że pakiet został zduplikowany lub uszkodzony, to się zdarza niecodziennie, a przyczyny są różne."</string>
+    <string name="count_text">"Policz:"</string>
+    <string name="required_count">"Użyj od 1 do 99999999999!"</string>
+    <string name="help_ping_only">"Jeśli ta opcja jest włączona, Ping Tool wyświetli tylko odpowiedzi ping. Statystyki na końcu polecenia ping nie będą wyświetlane."</string>
+    <string name="ping_only_text">"Tylko odpowiedzi "</string>
+    <string name="count_finished">"! ---------- Count zakończony ----------!"</string>
+    <string name="doze_mode">"Doze Mode włączony, ping zatrzymany."</string>
+    <string name="ask7">"Co to jest komunikat \"Doze Mode włączony, ping zatrzymany.\"?"</string>
+    <string name="answer7">"Doze Mode to system oszczędzania baterii Androida, który optymalizuje aplikacje, które są w tle, aby oszczędzać baterię. Dzięki temu, gdy pingujesz i opuszczasz komórkę z ekranem wyłączonym przez jakiś czas, Ping Tool traci dostęp do Internetu, ponieważ Doze Mode blokuje dostęp. Jeśli chcesz, aby Ping Tool kontynuowało pingowanie nawet przy wyłączonym ekranie, będziesz musiał wyłączyć Doze Mode w telefonie tylko dla Ping Tool. Doze Mode jest obecny w systemie Android 6.0 lub nowszym."</string>
+    <string name="confirm_dialog">"Potwierdzenie"</string>
+    <string name="confirm_dialog_text">"Ping zostanie zatrzymany, czy na pewno chcesz kontynuować?"</string>
+    <string name="confirm_dialog_positive">"Tak"</string>
+    <string name="confirm_dialog_negative">"Nie"</string>
+    <string name="confirm_dialog_reset">"Ustawienia zostaną zresetowane do domyślnych, czy chcesz kontynuować?"</string>
+    <string name="type_label">"Rodzaj: "</string>
+    <string name="internet_unavaiable">"Internet niedostępny"</string>
+    <string name="invalid_url">"Wprowadź poprawnego host"</string>
+    <string name="ping_mode">Tryb Ping:</string>
+    <string name="help_ping_mode">Określ, czy chcesz pingować hosta za pomocą tylko IPV4 lub IPV4/IPV6. Jeśli korzystasz z trybu IPV4/IPV6 i twoje połączenie obsługuje IPV6, narzędzie Ping będzie preferować IPV6. Jeśli IPV4/IPV6 jest wyłączony, to wersja Androida nie obsługuje pingowania adresów IPv6. Zobacz więcej informacji w menu pomocy.</string>
+    <string name="ipv4_off">"Twoje połączenie nie obsługuje IPV4, zmień tryb na IPV4/IPV6 w ustawieniach."</string>
+    <string name="no_ipv4">"Twoje połączenie nie obsługuje IPV4, więc nie ma możliwości wysłania polecenia ping do host IPv4."</string>
+    <string name="no_ipv6">"Twoje połączenie nie obsługuje IPV6, więc nie ma możliwości wysłania polecenia ping do host IPv6."</string>
+    <string name="no_support">"Niewspierany"</string>
+    <string name="unknown_host">"Nieznany lub nieprawidłowy host"</string>
+    <string name="packet_recounted">"Ostrzeżenie: utracone pakiety zostały policzone ponownie!"</string>
+    <string name="ask8">"Co oznacza ostrzeżenie: \"czy utracone pakiety zostały ponownie policzone?"</string>
+    <string name="answer8">"Oznacza to, że podczas pingowania niektóre pakiety przestały działać i zostały porysowane, a Ping Tool ponownie zsumowało liczbę pakietów utraconych podczas pingowania."</string>
+    <string name="warning1">"Ostrzeżenie: Gdy zaznaczona jest opcja \"tylko odpowiedzi\", Ping Tool nie policzy pakietów, które zostały utracone jako ostatnie, gdy tylko ping przestanie się liczyć, liczba pakietów zostanie zatrzymana."</string>
+    <string name="contains_unknown">"ping: nieznany host: "</string>
+    <string name="new_type_connection">"Nowy typ połączenia"</string>
+    <string name="no_dns">"Brak DNS"</string>
+    <string name="getting_mask">Sprawdzając</string>
+    <string name="label_bytes">Bajty:</string>
+    <string name="required_bytes">Użyj od 0 do 65507!</string>
+    <string name="help_packet_bytes">Określ liczbę bajtów danych do wysłania. Wartość domyślna to 56, co przekłada się na 64 bajty danych ICMP w połączeniu z 8 bajtami danych nagłówka ICMP.</string>
+    <string name="send_email">Wyślij e-mail z…</string>
+    <string name="report_bug_error">Nie można znaleźć aplikacji e-mail i konta</string>
+    <string name="ipv4off_pie">Twoje połączenie nie obsługuje IPV4, a twoja wersja Androida nie obsługuje ping na połączeniu IPV6!</string>
+    <string name="ask3">Dlaczego nie mogę pingować adresów IPv6 na Androida 9.0?</string>
+    <string name="answer3">Niestety, to nie do nas należy rozwiązanie tego problemu, w Androidzie 9.0 istnieje to ograniczenie, które nie zezwala systemowi na pingowanie adresów IPv6.</string>
+    <string name="time_out">Time Out - Przeładuj</string>
+    <string name="erro_reload">Błąd - Załaduj ponownie</string>
+    <string name="external_ip">"Zewnętrzny adres IP: "</string>
+    <string name="dont_remove">Nie usuwaj tych informacji</string>
+    <string name="menu_rate">Oceń</string>
+    <string name="give_permission_text">Nadaj uprawnienie nakładki, aby kontynuować.</string>
+    <string name="permission_required_text">Wymagane Pozwolenie</string>
+    <string name="warning_pingfloat">Nie można uruchomić okna float, jeśli opcja „tylko odpowiedzi” jest wyłączona.</string>
+    <string name="help_floating_mode">Po włączeniu tej opcji można pingować pływające okno, nakładając inne aplikacje. Utracone pakiety są wyświetlane za każdym razem, gdy następuje utrata pakietu w pływającym oknie.</string>
+    <string name="help_text_size">Zmienia to rozmiar tekstu w pływającym oknie, im większy tekst, tym większe okno.</string>
+    <string name="setting_text_size">Tekst:</string>
+    <string name="total_loss">" całkowite straty."</string>
+    <string name="text_float_mode">"Tryb pływakowy "</string>
+    <string name="please_write_details">Proszę szczegółowo opisać problem</string>
+
+</resources>

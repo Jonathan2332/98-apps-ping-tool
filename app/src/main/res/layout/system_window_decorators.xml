@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="200dp"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/window_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/description_icon" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="Title"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/open"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/ic_open"
+            android:contentDescription="@string/description_open" />
+
+        <ImageView
+            android:id="@+id/maximize"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/ic_maximize"
+            android:contentDescription="@string/description_maximize" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_icon_close"
+            android:contentDescription="@string/close" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        android:background="@drawable/rounded_bottom" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/titlebar"
+        android:background="@color/colorAccent2" />
+
+    <RelativeLayout
+        android:id="@+id/corner"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_resize"
+            android:contentDescription="@string/description_resize" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

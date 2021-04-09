@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="parar">"Halt"</string>
+    <string name="interval">"Intervall: "</string>
+    <string name="total_pacotes_perdidos">"Verlorene Pakete: "</string>
+    <string name="action_settings">"Einstellungen"</string>
+    <string name="exemplo">"Beispiel: 8.8.8.8"</string>
+    <string name="conexao">"Verbindung: "</string>
+    <string name="endereco_ipv6">"IPV6-Adresse: "</string>
+    <string name="endereco_ipv4">"IPV4-Adresse: "</string>
+    <string name="host_empty">"Sie müssen den Host bevölkern!"</string>
+    <string name="close">"Schließen"</string>
+    <string name="request_timedout">"Die Anforderung ist abgelaufen."</string>
+    <string name="host_unreachable">"Das Host-Ziel ist nicht erreichbar!"</string>
+    <string name="lost_packet">" verlorenes Rudel."</string>
+    <string name="lost_packets">" verlorene Pakete."</string>
+    <string name="no_connection">"Keine Verbindung"</string>
+    <string name="packet_loss">"Siehe Paketverlust "</string>
+    <string name="reset">"Einstellungen zurücksetzen"</string>
+    <string name="text_reset">"Einstellungen zurückgesetzt!"</string>
+    <string name="button_save">"Sparen"</string>
+    <string name="settings_saved">"Einstellungen angewendet!"</string>
+    <string name="required_text">"Füllen Sie dieses Feld aus!"</string>
+    <string name="required_interval">"Verwenden Sie zwischen 0.2 und 999999!"</string>
+    <string name="help_packet_loss">"Während des Pings werden die verloren gegangenen Pakete angezeigt und gezählt."</string>
+    <string name="help_count_host">"Geben Sie an, wie oft Sie die Ping-Anforderung an einen bestimmten Host senden möchten. Sie können eine benutzerdefinierte Nummer zwischen 1 und 99999999999 oder unbegrenzt wählen."</string>
+    <string name="help_interval">"Geben Sie das Zeitintervall für jedes zu sendende Paket an. Im benutzerdefinierten Intervall können Sie die Zeit in Sekunden oder Millisekunden angeben. Das Ping Tool verfügt über 5 vordefinierte Profile:\n\t-Sehr Kurze - 0.2\n\t-Kurz - 0.6\n\t-Normal - 1\n\t-Lange - 2\n\t-Sehr Lang - 3"</string>
+    <string name="prevent_trace">"Verwenden Sie keinen Bindestrich, nur Punkte."</string>
+    <string name="version">"Ausführung: "</string>
+    <string name="mask">"Subnetzmaske: "</string>
+    <string name="ajuda">"Hilfe"</string>
+    <string name="mask_unknown">"Unbekannte"</string>
+    <string name="text_mac">"MAC-Adresse: "</string>
+    <string name="operator">"Operator: "</string>
+    <string name="ask2">"Warum werden einige Pakete außer Betrieb und verkratzt?"</string>
+    <string-array name="velocity_array">
+        <item>"Sehr Lang"</item>
+        <item>"Lange"</item>
+        <item>"Normal"</item>
+        <item>"Kurz"</item>
+        <item>"Sehr Kurze"</item>
+        <item>"Custom"</item>
+    </string-array>
+    <string-array name="count_array">
+        <item>"Unbegrenzt"</item>
+        <item>"10"</item>
+        <item>"100"</item>
+        <item>"500"</item>
+        <item>"1000"</item>
+        <item>"2000"</item>
+        <item>"Custom"</item>
+    </string-array>
+    <string-array name="array_mode">
+        <item>"IPV4"</item>
+        <item>"IPV4/IPV6"</item>
+    </string-array>
+    <string-array name="array_text_size">
+        <item>Klein</item>
+        <item>Mittel</item>
+        <item>Groß</item>
+    </string-array>
+    <string name="ask1">"Was ist das Ping Tool?"</string>
+    <string name="answer1">"Eine Anwendung zum Ausführen des PING-Befehls, einem Netzwerkdiagnosetool. Zum Ping müssen Sie den Host (URL oder IP-Adresse) angeben, den Sie testen möchten, und die PING-Taste drücken."</string>
+    <string name="ask4">"Ist das Ping Tool falsch?"</string>
+    <string name="answer4">"Nein, das Ping Tool führt den Ping-Befehl im Android-Terminal Ihres Mobiltelefons aus und erhält die Ergebnisse."</string>
+    <string name="ask5">"Warum können wir nicht ein Intervall von 0.1 Millisekunden haben?"</string>
+    <string name="answer5">"Nach den Regeln von Android kann nur der Superuser den Bereich mit Werten unter 0.2 Millisekunden einstellen."</string>
+    <string name="answer2">"Dies kann vorkommen, wenn Ihr Internet sehr schlecht ist. Der Grund für das Außerbetriebsetzen ist kein Anwendungsfehler. Der Android-Fehler Ping Tool verkratzt diese Pakete jedoch nur, um sie leichter identifizieren zu können. Leider liegt es nicht an uns, dieses Problem zu lösen, sorry."</string>
+    <string name="ask6">"Warum bleiben einige Pakete zerkratzt und mit der Nachricht (DUP!)?"</string>
+    <string name="answer6">"Dies kann passieren, wenn Ihr Internet sehr schlecht ist. Das Ping Tool verkratzt diese Pakete nur zur Identifizierung und nicht zu einem Anwendungsfehler. Die Meldung (DUP!) Bedeutet, dass das Paket dupliziert oder beschädigt wurde, dass dies ungewöhnlich ist und die Gründe unterschiedlich sind."</string>
+    <string name="count_text">"Anzahl:"</string>
+    <string name="required_count">"Verwenden Sie zwischen 1 und 99999999999!"</string>
+    <string name="help_ping_only">"Wenn die Option aktiviert ist, zeigt das Ping Tool nur die Ping-Antworten an. Statistiken am Ende des Pings werden nicht angezeigt."</string>
+    <string name="ping_only_text">"Nur Antworten "</string>
+    <string name="count_finished">"!---------- Count Beendet ----------!"</string>
+    <string name="doze_mode">"Doze Mode aktiviert, Ping gestoppt."</string>
+    <string name="ask7">"Was ist die Meldung \"Doze Mode aktiviert, Ping gestoppt.\"?"</string>
+    <string name="answer7">"Der Doze Mode ist ein akkusparendes Android-System, das im Hintergrund befindliche Apps optimiert, um Batteriestrom zu sparen. Wenn Sie ein Ping-Signal ausführen und die Zelle bei ausgeschaltetem Bildschirm für eine Weile ausgeschaltet lassen, verliert das Ping Tool den Zugriff auf das Internet, da der Doze Mode den Zugriff blockiert. Wenn Sie möchten, dass das Ping Tool auch bei ausgeschaltetem Bildschirm weiter pingt, müssen Sie den Doze Mode Ihres Telefons nur für das Ping Tool deaktivieren. Der Doze Modes ist in Android 6.0 oder höher verfügbar."</string>
+    <string name="confirm_dialog">"Bestätigung"</string>
+    <string name="confirm_dialog_text">"Ping wird gestoppt. Möchten Sie fortfahren?"</string>
+    <string name="confirm_dialog_positive">"Ja"</string>
+    <string name="confirm_dialog_negative">"Nein"</string>
+    <string name="confirm_dialog_reset">"Die Einstellungen werden auf die Standardeinstellungen zurückgesetzt. Möchten Sie fortfahren?"</string>
+    <string name="type_label">"Art: "</string>
+    <string name="internet_unavaiable">"Internet nicht verfügbar"</string>
+    <string name="invalid_url">"Bitte geben Sie einen gültigen Host ein"</string>
+    <string name="ping_mode">"Ping-Modus:"</string>
+    <string name="help_ping_mode">Geben Sie an, ob Sie einen Host nur mit IPV4 oder mit IPV4/IPV6 pingen möchten. Wenn Sie den IPV4/IPV6-Modus verwenden und Ihre Verbindung IPV6 unterstützt, bevorzugt das Ping-Tool IPV6. Wenn IPV4/IPV6 deaktiviert ist, unterstützt Ihre Android-Version kein Ping von IPv6-Adressen. Weitere Informationen finden Sie im Hilfemenü.</string>
+    <string name="ipv4_off">"Ihre Verbindung unterstützt kein IPV4. Ändern Sie in den Einstellungen den Modus in IPV4/IPV6."</string>
+    <string name="no_ipv4">"Ihre Verbindung unterstützt kein IPV4, daher gibt es keine Möglichkeit, einen IPv4-Host zu pingen."</string>
+    <string name="no_ipv6">"Ihre Verbindung unterstützt kein IPV6, daher gibt es keine Möglichkeit, einen IPv6-Host zu pingen."</string>
+    <string name="no_support">"Nicht unterstützt"</string>
+    <string name="unknown_host">"Unbekannter oder ungültiger Host"</string>
+    <string name="packet_recounted">"Achtung: Verlorene Pakete wurden nacherzählt!"</string>
+    <string name="ask8">"Was bedeutet die Warnung \"Verlorene Pakete wurden neu gezählt\"?"</string>
+    <string name="answer8">"Dies bedeutet, dass einige Pakete während des Pings nicht in der richtigen Reihenfolge waren und zerkratzt wurden und das Ping Tool die Gesamtzahl der während des Ping verloren gegangenen Pakete nachzählte."</string>
+    <string name="warning1">"Warnung: Wenn die Option \"Nur Antworten\" aktiviert ist, zählt das Ping Tool die zuletzt verloren gegangenen Pakete nicht, sobald der Ping-Befehl aufhört, und die Paketanzahl wird nicht mehr angezeigt."</string>
+    <string name="contains_unknown">"ping: unbekannter host: "</string>
+    <string name="new_type_connection">"Neuer Verbindungstyp"</string>
+    <string name="no_dns">"Kein DNS"</string>
+    <string name="getting_mask">"Bekommen"</string>
+    <string name="label_bytes">Bytes:</string>
+    <string name="required_bytes">"Verwenden Sie zwischen 0 und 65507!"</string>
+    <string name="help_packet_bytes">"Gibt die Anzahl der zu sendenden Datenbytes an. Der Standardwert ist 56, dh 64 ICMP-Datenbytes, wenn er mit den 8 Byte der ICMP-Headerdaten kombiniert wird."</string>
+    <string name="send_email">E-Mail senden mit…</string>
+    <string name="report_bug_error">Konnte keine E-Mail-App und kein Konto finden</string>
+    <string name="ipv4off_pie">Ihre Verbindung unterstützt kein IPV4 und Ihre Android-Version unterstützt kein Ping bei einer IPV6-Verbindung!</string>
+    <string name="ask3">Warum kann ich unter Android 9.0 keine IPv6-Adressen pingen?</string>
+    <string name="answer3">Leider liegt es nicht an uns, dieses Problem zu lösen. In Android 9.0 gibt es diese Einschränkung, durch die das System keine IPv6-Adressen anpingen kann.</string>
+    <string name="time_out">Time Out - Nachladen</string>
+    <string name="erro_reload">Fehler - Neu laden</string>
+    <string name="external_ip">"Externe IP: "</string>
+    <string name="dont_remove">Bitte entfernen Sie diese Informationen nicht</string>
+    <string name="menu_rate">Auswerten</string>
+    <string name="give_permission_text">Erlauben Sie die Überlagerung zum Fortfahren.</string>
+    <string name="permission_required_text">Erlaubnis erforderlich</string>
+    <string name="warning_pingfloat">Sie können das Float-Fenster nicht starten, wenn die Option \"Nur Antworten\" deaktiviert ist.</string>
+    <string name="help_floating_mode">Wenn diese Option aktiviert ist, können Sie ein Ping an ein schwebendes Fenster senden, indem Sie andere Anwendungen überlagern. Verlorene Pakete werden jedes Mal angezeigt, wenn im schwebenden Fenster ein Paketverlust auftritt.</string>
+    <string name="help_text_size">Dies ändert die Größe des Texts im schwebenden Fenster. Je größer der Text, desto größer das Fenster.</string>
+    <string name="setting_text_size">Textgröße:</string>
+    <string name="total_loss">" Gesamtverluste."</string>
+    <string name="text_float_mode">"Float-Modus "</string>
+    <string name="please_write_details">Bitte schreiben Sie im Detail, wo das Problem liegt</string>
+
+</resources>
